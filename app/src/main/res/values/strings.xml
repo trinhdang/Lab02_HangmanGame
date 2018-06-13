@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Hangman Game</string>
+    <!--add the bank of words for Word Puzzle-->
+    <string-array name="words">
+        <item>ENCAPSULATION</item>
+        <item>Hint: A technique to hide the properties and behaviours of an object</item>
+        <item>INHERITANCE</item>
+        <item>Hint: The process which allows the objects of one class to acquire the properties of objects of another class</item>
+        <item>OVERRIDE</item>
+        <item>Hint: When a subclass declares a method possessing similar arguments as a method declared by one of its superclass, " this ...." takes place </item>
+        <item>POLYMORPHISM</item>
+        <item>Hint: This is the ability to take up in various form </item>
+        <item>CLASS</item>
+        <item>Hint: A blue-print of an object, a collection of data and operations on data.</item>
+        <item>NULL</item>
+        <item>Hint: The default value of an object</item>
+        <item>CONSTRUCTOR</item>
+        <item>Hint: A method that is used to initialize the state of an object. It is invoked at the time of object creation</item>
+        <item>FINAL </item>
+        <item>Hint: A "keyword" to define a constant variable that you cannot change its value</item>
+        <item>INTERFACE</item>
+        <item>Hint: a blue-print of a class that have static constant and abstract methods. It can be used to achieve fully abstraction and multiple inheritance </item>
+        <item>STRING </item>
+        <item>Hint: A data type, a sequence of characters </item>
+        <item>MULTITHREAD </item>
+        <item>Hint: a process of executing multiple tasks or calculations simultaneously</item>
+        <item>BREAK </item>
+        <item>Hint: A statement (keyword) is used in "switch, for, do, or while" syntax to terminate the loop or statement</item>
+        <item>CHAR </item>
+        <item>Hint: a primitive data type represents a character</item>
+        <item>BOOLEAN </item>
+        <item>Hint: a primitive data type has only two values</item>
+    </string-array>
+</resources>

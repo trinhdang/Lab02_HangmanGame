@@ -1,0 +1,15 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true"
+    android:shape="line">
+    <!--Define line stroke-->
+    <stroke
+        android:width="2dp"
+        android:color="#FF333333" />
+    <!--Define line color-->
+    <solid android:color="#00000000" />
+    <padding android:bottom="20dp" />
+    <!--Define size of line-->
+    <size
+        android:width="20dp"
+        android:height="20dp" />
+</shape>

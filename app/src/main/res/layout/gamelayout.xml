@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+    <!--Add a LinearLayout to display Score and Timer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Add a TextView to display the Score-->
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SCORE: 0"
+            android:textColor="#970de7"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <!--Add TextView to display timer-->
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TIMER: 0"
+            android:textColor="#0d1fe7"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--Add a LinearLayout for gallows and list of correct words-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Add an ImageView to display gallows-->
+        <ImageView
+            android:id="@+id/gallows"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:contentDescription="gamelogo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gallows" />
+        <!--Add a TextView for list of correctly guessed words-->
+        <TextView
+            android:id="@+id/listCorrectWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="List of correct words \n"
+            android:textColor="#0a28ef"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!--Add a TextView to display the hint-->
+    <TextView
+        android:id="@+id/wordhint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Hint: "
+        android:textColor="#FF000000"
+        android:textSize="17sp" />
+
+    <!--Add word layout for choosing and presenting a word-->
+    <LinearLayout
+        android:id="@+id/wordlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <!--The word's letters will be presented in java code-->
+    </LinearLayout>
+
+    <!--Add a gridView for creating an area for players to choose letters to guess: Letter buttons-->
+    <GridView
+        android:id="@+id/letters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF000000"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="7"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp">
+        <!--Add letters of the alphabet to buttons in the gridView in java code-->
+    </GridView>
+</LinearLayout>
